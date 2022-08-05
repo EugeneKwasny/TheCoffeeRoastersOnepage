@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="1">
     <title>The Coffee Roasters Onepage</title>
     <link href="./dist/css/main.min.css" rel="stylesheet">
     <link href="./dist/js/main.min.js" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
-        <div class="site-header__inner">
-            <div class="site-logo">Cofee House</div>
-            <nav class="main-menu">
-                <ul class="main-menu__list">
-                    <li class="main-menu__list-item"><a class="main-menu__list-item-link" href="#">Home</a></li>
-                    <li class="main-menu__list-item"><a class="main-menu__list-item-link" href="#">Why us</a></li>
-                    <li class="main-menu__list-item"><a class="main-menu__list-item-link" href="#">Menu</a></li>
-                    <li class="main-menu__list-item"><a class="main-menu__list-item-link" href="#">Happy clients</a></li>
-                    <li class="main-menu__list-item"><a class="main-menu__list-item-link" href="#">Blog</a></li>
-                    <li class="main-menu__list-item"><a class="main-menu__list-item-link" href="#">Our locations</a></li>
-                    <li class="main-menu__list-item"><a class="main-menu__list-item-link" href="#">Newsletter</a></li>
+        <div class="site-header__inner container">
+            <div class="site-header__site-logo">Cofee House</div>
+            <nav class="site-header__main-menu">
+                <ul class="site-header__main-menu-list">
+                    <li class="site-header__main-menu-list-item"><a class="site-header__main-menu-list-item-link" href="#">Home</a></li>
+                    <li class="site-header__main-menu-list-item"><a class="site-header__main-menu-list-item-link" href="#">Why us</a></li>
+                    <li class="site-header__main-menu-list-item"><a class="site-header__main-menu-list-item-link" href="#">Menu</a></li>
+                    <li class="site-header__main-menu-list-item"><a class="site-header__main-menu-list-item-link" href="#">Happy clients</a></li>
+                    <li class="site-header__main-menu-list-item"><a class="site-header__main-menu-list-item-link" href="#">Blog</a></li>
+                    <li class="site-header__main-menu-list-item"><a class="site-header__main-menu-list-item-link" href="#">Our locations</a></li>
+                    <li class="site-header__main-menu-list-item"><a class="site-header__main-menu-list-item-link" href="#">Newsletter</a></li>
                 </ul>
             </nav>
+            <div class="site-header__main-menu-toggle">
+                <span class="site-header__main-menu-toggle-item"></span>
+                <span class="site-header__main-menu-toggle-item"></span>
+                <span class="site-header__main-menu-toggle-item"></span>
+            </div>
         </div>
     </header>
     <section class="hero-section">
-        <section class="hero-section__inner">
+        <section class="hero-section__inner container">
             <img class="hero-section__logo" src="./images/hero-logo.svg" alt="Hero logo">
             <h1 class=hero-section__heading">The Coffee Roasters</h1>
             <p class=hero-section__description">We source our coffee seasonally, from farmers who care, and roast to highlight what makes them special.</p>
@@ -34,7 +39,7 @@
         </section>
     </section>
     <section class="features">
-        <section class="features__inner">
+        <section class="features__inner container">
             <div class="features__list">
                 <div class="features__list-item">
                     <h6 class="features__list-item-heading">Indoor seating</h6>
@@ -69,14 +74,14 @@
         </section>
     </section>
     <section class="cta">
-        <section class="cta__inner">
+        <section class="cta__inner container">
             <h2 class="cta__heading">Looking for a fresh coffee?</h2>
             <p class="cta__description">Come drink a coffee with us on  Fleet Street,  Chancery Lane or Milkwood Road!</p>
             <a class="btn outline" href="#">Book a table</a>
         </section>
     </section>
     <section class="menu">
-        <section class="menu__inner">
+        <section class="menu__inner container">
             <h2 class="menu__heading">Explore our menu</h2>
             <p class="menu__description">Available all day! We can not guarantee our foods are allergen-free. Service charge not included.</p>
             <div class="menu__tabs">
@@ -198,7 +203,7 @@
         </section>
     </section>
     <section class="testimonials">
-        <section class="testimonials__inner">
+        <section class="testimonials__inner container">
             <h2 class="testimonials__heading">Testimonials</h2>
             <div class="testimonails-slider">
                 <blockquote class="testimonials__item">
@@ -233,7 +238,7 @@
         </section>
     </section>
     <section class="news-section">
-        <section class="news-section__inner">
+        <section class="news-section__inner container">
             <h2 class="news-section__heading">News</h2>
             <p class="news-section__description">Stay updated on all the latest Coffee House products, events & community news.</p>
             <div class="news-section__news-row">
@@ -265,7 +270,7 @@
         </section>
     </section>
     <section class="locations">
-        <section class="locations__inner">
+        <section class="locations__inner container">
             <h2 class="locations__heading">Our locations</h2>
             <p class="locations__description">Come drink a coffee with us on Fleet Street or Chancery Lane!</p>
             <div class="locations__items-row">
@@ -304,7 +309,7 @@
         </section>
     </section>
     <section class="newsletter">
-        <section class="newsletter__inner">
+        <section class="newsletter__inner container">
             <h2 class="newsletter__heading">Our newsletter</h2>
             <p class="newsletter__description">Available all day! We can not guarantee our foods are allergen-free. Service charge not included.</p>
             <form class="newsletter__form">
@@ -314,7 +319,7 @@
         </section>
     </section>
     <footer class="site-footer">
-        <div class="site-footer__inner">
+        <div class="site-footer__inner container">
             <p class="site-footer__copyright">Copyright 2022 All rights reserved</p>
             <nav class="site-footer__menu">
                 <ul class="site-footer__menu-list">
