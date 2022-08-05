@@ -1,0 +1,17 @@
+@import '../../node_modules/reset-css/sass/reset';
+
+@import './fonts/inter-font';
+
+@import './layout/global';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './layout/sections/cta';
+@import './layout/sections/features';
+@import './layout/sections/hero';
+@import './layout/sections/locations';
+@import './layout/sections/menu';
+@import './layout/sections/news';
+@import './layout/sections/newsletter';
+@import './layout/sections/testimonials';

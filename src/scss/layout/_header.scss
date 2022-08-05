@@ -1,0 +1,41 @@
+.site-header{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+    position: absolute;
+
+    &__site-logo{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-transform: uppercase;
+
+        color: #EEEEEE;
+    }
+    &__main-menu{
+        display: none;
+        &-toggle{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 5px;
+
+            width: 19px;
+            height: 13px;
+
+        }
+        &-list{
+            
+        }
+    }
+}
