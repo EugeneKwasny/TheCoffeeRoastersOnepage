@@ -2,7 +2,11 @@
 
 @import './fonts/inter-font';
 
-@import './layout/global';
+
+@import './typography';
+@import './global';
+
+@import './components/button';
 
 @import './layout/header';
 @import './layout/footer';

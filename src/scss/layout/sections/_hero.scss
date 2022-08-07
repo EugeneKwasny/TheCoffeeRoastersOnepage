@@ -1,1 +1,41 @@
-.
+.hero-section{
+    background-color: #111111;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    color: #ffffff;
+    padding-top: 133px;
+    padding-bottom: 133px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__logo{
+        max-width: 120px;
+    }
+    &__heading{
+        @extend h2;
+        margin-top: 24px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 96px;
+        font-weight: 700;
+    }
+    &__description{
+        font-size: 24px;
+        line-height: 48px;
+        /* or 200% */
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 24px;
+    }
+    &__cta{
+        margin-top: 24px;
+    }
+}

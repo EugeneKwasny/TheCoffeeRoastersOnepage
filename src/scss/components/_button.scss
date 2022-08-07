@@ -1,0 +1,33 @@
+.btn{
+    box-sizing: border-box;
+
+    padding: 0px 41px;
+    display: flex;
+
+    background-color: #ffffff;
+    border: 1px solid #FFFFFF;
+
+    color: transparent;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+    /* identical to box height, or 300% */
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111111;
+
+    &:hover{
+        background-color: transparent;
+        color:#FFFFFF;
+    }
+
+    &.btn-outline{
+        background-color: transparent;
+        color: #ffffff;
+    }
+}

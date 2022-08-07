@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5, h6{
+    color: #111111;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+h1{
+    font-size: 56px;
+    line-height: 56px;
+    /* identical to box height, or 100% */
+}
+.h1-hero{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    /* identical to box height, or 100% */
+}
+h2{
+    font-size: 48px;
+    line-height: 48px;
+    /* identical to box height, or 100% */
+}
+h3{
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+}
+h4{
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+}
+h5{
+    font-size: 24px;
+    line-height: 48px;
+    /* identical to box height, or 200% */
+}
+h6{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+p{
+    @extend body;
+
+    &.small{
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
