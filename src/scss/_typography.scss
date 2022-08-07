@@ -43,9 +43,9 @@ h6{
 
 p{
     @extend body;
+}
 
-    &.small{
-        font-size: 12px;
-        line-height: 24px;
-    }
+.p-small{
+    font-size: 12px;
+    line-height: 24px;
 }
