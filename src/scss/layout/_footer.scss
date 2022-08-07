@@ -1,0 +1,92 @@
+.site-footer{
+    background-color: $default;
+    padding: 48px 0;
+    color: $white;
+
+    &__inner{
+        @extend .container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright{
+        @extend .p-small;
+        color: $white;
+    }
+    &__menu{
+        display: none;
+        &-list{
+            
+            &-item{
+                &-link{
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__social-follow{
+        &-list{
+            display: flex;
+            flex-direction: row;
+            gap: 26px;
+
+            &-item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &-link{
+                    width: 24px;
+                    height: 24px;
+                    background: rgba(217, 217, 217, 0.1);
+                    border-radius: 12px;
+                    font-size: 8px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: $white;
+                    text-decoration: none;
+
+                    &:hover{
+                        background: rgba(217, 217, 217, 0.2);  
+                    }
+                }
+            }
+        }
+    }
+}
+
+// <footer class="site-footer">
+// <div class="site-footer__inner container">
+//     <p class="site-footer__copyright">Copyright 2022 All rights reserved</p>
+//     <nav class="site-footer__menu">
+//         <ul class="site-footer__menu-list">
+//             <li class="site-footer__menu-list-item">
+//                 <a class="site-footer__menu-list-item-link" href="#">Home</a>
+//             </li>
+//             <li class="site-footer__menu-list-item">
+//                 <a class="site-footer__menu-list-item-link" href="#">About</a>
+//             </li>
+//             <li class="site-footer__menu-list-item">
+//                 <a class="site-footer__menu-list-item-link" href="#">Shop</a>
+//             </li>
+//             <li class="site-footer__menu-list-item">
+//                 <a class="site-footer__menu-list-item-link" href="#">Contacts</a>
+//             </li>
+//         </ul>
+//     </nav>
+//     <div class="site-footer__social-follow">
+//         <ul class="site-footer__social-follow-list">
+//             <li class="site-footer__social-follow-list-item">
+//                 <a class="site-footer__social-follow-list-item-link" href="#">Fb</a>
+//             </li>
+//             <li class="site-footer__social-follow-list-item">
+//                 <a class="site-footer__social-follow-list-item-link"  href="#">Tw</a>
+//             </li>
+//             <li class="site-footer__social-follow-list-item">
+//                 <a class="site-footer__social-follow-list-item-link" href="#">Ig</a>
+//             </li>
+//         </ul>
+//     </div>
+// </div>
+// </footer>
