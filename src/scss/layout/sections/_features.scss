@@ -4,7 +4,9 @@
     background-position: 10%;
     background-repeat: no-repeat;
     
-    &__inner{}
+    &__inner{
+        @extend .container;
+    }
 
     &__list{
         max-width: 352px;
