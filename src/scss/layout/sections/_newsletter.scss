@@ -30,13 +30,13 @@
             &-input{
                 &--type-text{
                     background-color: transparent;
-                    border: 1px solid #FFFFFF;
+                    border: 2px solid $white;
                     line-height: 48px;
                     padding: 0px 96px 0px 24px;
-                    color: #FFFFFF;
+                    color: $white;
 
                     &::placeholder{
-                        color: #FFFFFF;  
+                        color: $white;  
                     }
                 }
                 &--type-submit{
@@ -44,12 +44,7 @@
                     @extend .btn-white;
                     @extend .btn-outline;
 
-                    // padding: 0 41px;
-                    // line-height: 48px;
                     color: $white;
-                    // border: 1px solid #FFFFFF;
-                    // background-color: transparent;
-                    // text-transform: uppercase;
                 }
             }
         }
