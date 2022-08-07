@@ -1,16 +1,16 @@
 .btn{
+    display: flex;
+    padding: 0px 41px;
+    width: max-content;
     box-sizing: border-box;
 
-    padding: 0px 41px;
-    display: flex;
+    border-width: 2px;
+    border-style: solid;
 
-    background-color: #ffffff;
-    border: 1px solid #FFFFFF;
+    background-color: #111111;
+    border-color: #111111;
+    color: #FFFFFF;
 
-    color: transparent;
-
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 48px;
@@ -19,15 +19,37 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: #111111;
+  
 
     &:hover{
         background-color: transparent;
-        color:#FFFFFF;
+        color:#111111;
     }
 
+    &.btn-white{
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #111111;
+
+        &:hover{
+            background-color: transparent;
+            color: #ffffff;
+        }
+        &.btn-outline{
+            background-color: transparent;
+            color: #ffffff;
+            &:hover{
+                background-color: #ffffff;
+                color:#111111;
+            }
+        }
+    }
     &.btn-outline{
         background-color: transparent;
-        color: #ffffff;
+        color: #111111;
+        &:hover{
+            background-color: #111111;
+            color:#FFFFFF;
+        }
     }
 }
