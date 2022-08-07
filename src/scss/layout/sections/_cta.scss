@@ -1,0 +1,32 @@
+.cta-section{
+    @extend .section;
+    background-image: url(../../images/cta-bg.png);
+    background-position: center center;
+    background-size: cover;
+    &__inner{
+        @extend .container;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading{
+        text-align: center;
+        color: #ffffff;
+        font-weight: 700;
+        &-hr{
+            margin-top: 24px;
+            width: 189px;
+            color: #ffffff;
+        }
+    }
+    &__description{
+        margin-top: 24px;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__cta-wrapper{
+        margin-top: 48px;
+    }
+}
