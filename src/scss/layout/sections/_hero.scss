@@ -9,10 +9,12 @@
     padding-bottom: 133px;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
 
     
     &__inner{
+        @extend .container;
         display: flex;
         flex-direction: column;
         align-items: center;
