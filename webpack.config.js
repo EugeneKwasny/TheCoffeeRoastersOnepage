@@ -8,7 +8,8 @@ module.exports = {
     },
     output: {
         path: __dirname + "/dist/js/",
-        filename: "[name].min.js"
+        filename: "[name].min.js",
+        assetModuleFilename: '[name][ext][query]'
     },
     watch: true,
     module: {
@@ -18,7 +19,7 @@ module.exports = {
                 {
                     loader: miniCss.loader,
                     options: {
-                        publicPath: ''
+                        publicPath: '../../images'
                     }
                 },
                 'css-loader',
@@ -36,7 +37,10 @@ module.exports = {
                     }
                 }
             ]
-        }]
+        },{
+            test: /\.(jpg|png|svg)$/,
+            type: 'asset/resource'
+          }]
     },
     plugins: [
         new miniCss({
