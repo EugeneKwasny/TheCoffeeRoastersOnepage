@@ -1,0 +1,91 @@
+.menu-section{
+    @extend .section;
+
+    &__inner{
+        @extend .container;
+    }
+
+    &__heading{
+        text-align: center;
+        font-weight: 700;
+        &-hr{
+            margin-top: 24px;
+            width: 189px;
+        }
+    }
+    &__description{
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    &__tabs{
+        margin-top: 48px;
+        &-list{
+            display: flex;
+            justify-content: center;
+
+            gap: 40px;
+            &-item{
+                &-link{
+                    color: $default;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    &:hover{
+                        color: $primary;
+                    }
+                    &--active{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+        
+    &__list-wrapper{
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__item{
+        display: flex;
+        gap: 24px;
+
+        &-thumb{
+            flex: 0 0 72px;
+            &-image{
+               
+                width: 72px;
+                height: 72px;
+            }
+        }
+        &-body{
+            flex: 0 0 320px;
+            &-heading{}
+            &-desc{
+                @extend .p-small;
+            }
+            &-price{
+                flex: 0 0 auto;
+            }
+        }
+    }
+}
+
+// <div class="menu-list__item">
+// <div class="menu-list__item-thumb">
+//     <img class="menu-list__item-thumb-image" src="./images/menu-1.png" alt="menu-1">
+// </div>
+// <div class="menu-list__item-body">
+//     <h6 class="menu-list__item-body-heading">Prufrock Breakfast Bun</h6>
+//     <p class="menu-list__item-body-desc">Brioche bun, with bacon, scrambled egg, melty cheese and mustard</p>
+// </div>
+// <div class="menu-list__item-body-price">$8</div>
+// </div>
