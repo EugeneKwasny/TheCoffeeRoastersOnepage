@@ -14,33 +14,39 @@ module.exports = {
     watch: true,
     module: {
         rules: [{
-            test:/\.(s*)css$/,
-            use: [
-                {
-                    loader: miniCss.loader,
-                    options: {
-                        publicPath: '../../images'
-                    }
+                test: /\.js$/,
+                loader: "babel-loader",
+                exclude: /(node_modules)/
                 },
-                'css-loader',
-                'sass-loader',
-            ]
-        },
-        {
-            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-            use: [
                 {
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: '../fonts/'
-                    }
-                }
-            ]
-        },{
-            test: /\.(jpg|png|svg)$/,
-            type: 'asset/resource'
-          }]
+                    test:/\.(s*)css$/,
+                    use: [
+                        {
+                            loader: miniCss.loader,
+                            options: {
+                                publicPath: '../../images'
+                            }
+                        },
+                        'css-loader',
+                        'sass-loader',
+                    ]
+                },
+                {
+                    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                    use: [
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: '[name].[ext]',
+                                outputPath: '../fonts/'
+                            }
+                        }
+                    ]
+                },
+                {
+                    test: /\.(jpg|png|svg)$/,
+                    type: 'asset/resource'
+            }]
     },
     plugins: [
         new miniCss({
