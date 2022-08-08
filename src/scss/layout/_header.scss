@@ -31,6 +31,11 @@
     }
     &__main-menu{
         display: none;
+
+        @media (min-width: 1200px) {
+            display: flex;
+        }
+
         &-toggle{
             display: flex;
             flex-direction: column;
@@ -41,6 +46,10 @@
 
             width: 19px;
             height: 13px;
+
+            @media (min-width: 1200px) {
+                display: none;
+            }
             &-item{
                 background-color: #ffffff;
                 width: 100%;
@@ -49,7 +58,25 @@
             }
         }
         &-list{
-            
+            @media (min-width: 1200px) {
+               display: flex;
+               gap: 40px;
+            }
+
+            &-item{
+                &-link{
+                    @media (min-width: 1200px) {
+                        color: $white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                    &:hover{
+                        @media (min-width: 1200px) {
+                            text-decoration: underline;
+                        } 
+                    }
+                }
+            }
         }
     }
 }

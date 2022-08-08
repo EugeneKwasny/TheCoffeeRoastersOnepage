@@ -9,12 +9,26 @@ body{
 }
 
 .container{
-    max-width: 100%;
+    width: 100%;
     padding:  0 40px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    @media (min-width: 576px) {
+        max-width: 496px;
+    }
+    @media (min-width: 768px) {
+        max-width: 688px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1120px;
+    }
 }
 
 .section{
     padding: 96px 0;
+    &__description{
+        max-width: 474px;
+    }
 }
 
 img{

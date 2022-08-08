@@ -22,9 +22,11 @@
         }
     }
     &__description{
+        @extend .section__description;
         margin-top: 24px;
         text-align: center;
         color: #ffffff;
+      
     }
     &__cta-wrapper{
         margin-top: 48px;

@@ -15,12 +15,23 @@
     }
     &__menu{
         display: none;
+
+        @media (min-width: 1200px) {
+            display: block;
+        }
+
         &-list{
-            
+            @media (min-width: 1200px) {
+                display: flex;
+                gap: 48px;
+            }
             &-item{
                 &-link{
                     color: $white;
                     text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }

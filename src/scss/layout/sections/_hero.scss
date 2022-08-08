@@ -23,12 +23,15 @@
         max-width: 120px;
     }
     &__heading{
-        @extend h2;
+        @extend h3;
         margin-top: 24px;
         text-align: center;
         color: #ffffff;
         line-height: 96px;
         font-weight: 700;
+        @media (min-width: 1200px) {
+           font-size: 96px;
+        }
     }
     &__description{
         font-size: 24px;
@@ -37,6 +40,10 @@
         text-align: center;
         color: #FFFFFF;
         margin-top: 24px;
+        max-width: 763px;
+        @media (min-width: 1200px) {
+            font-size: 32px;
+        }
     }
     &__cta{
         margin-top: 24px;
