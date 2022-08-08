@@ -28,6 +28,8 @@
         text-transform: uppercase;
 
         color: #EEEEEE;
+
+        z-index: 9;
     }
     &__main-menu{
         display: none;
@@ -45,8 +47,10 @@
             gap: 5px;
 
             width: 19px;
-            height: 13px;
+            height: 19px;
 
+            cursor: pointer;
+            
             @media (min-width: 1200px) {
                 display: none;
             }
@@ -56,8 +60,26 @@
                 height: 1px;
                 border-radius: 1px;
             }
+
+            &--active {
+                gap: 0px;
+                position: relative;
+
+                span:nth-child(1){
+                        transform: rotate(45deg);
+                        position: absolute;
+                }
+                span:nth-child(2){
+                    display: none;
+                }
+                span:nth-child(3){
+                        transform: rotate(-45deg);
+                        position: absolute;
+                }
+            } 
         }
         &-list{
+            z-index: 9;
             @media (min-width: 1200px) {
                display: flex;
                gap: 40px;
