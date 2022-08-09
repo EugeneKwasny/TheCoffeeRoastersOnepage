@@ -1,4 +1,4 @@
-const mobileMenu = ({toggleSlector, mobileMenuSelector, activeSelectorModifier})=>{
+const mobileMenuToggle = ({toggleSlector, mobileMenuSelector, activeSelectorModifier})=>{
 
     const toggleElement = document.querySelector(toggleSlector);
     const mobileMenu = document.querySelector(mobileMenuSelector);
@@ -8,10 +8,9 @@ const mobileMenu = ({toggleSlector, mobileMenuSelector, activeSelectorModifier})
     
     toggleElement.addEventListener('click', (event)=>{
         event.preventDefault();
-        console.log(toggleElement);
         toggleElement.classList.toggle(toggleActiveSelector);
         mobileMenu.classList.toggle(mobileMenuActiveSelector);
     });
 } 
 
-export default mobileMenu;
+export default mobileMenuToggle;

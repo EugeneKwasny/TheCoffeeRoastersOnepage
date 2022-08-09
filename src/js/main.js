@@ -1,10 +1,10 @@
-import mobileMenu from './modules/mobile-menu';
+import mobileMenuToggle from './modules/mobileMenuToggle';
 import tabsModule from './modules/tabsModule';
 
 /**
  * Mobile menu init
  */
-mobileMenu({
+mobileMenuToggle({
     toggleSlector: '.site-header__main-menu-toggle',
     mobileMenuSelector: '.mobile-menu',
     activeSelectorModifier: '--active'
