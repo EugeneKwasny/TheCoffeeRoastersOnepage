@@ -1,4 +1,4 @@
-const tabsMudule = ({tabsSelector, tabsContentWrapperSelector, activeSelectorModifier}) => {
+const tabsModule = ({tabsSelector, tabsContentWrapperSelector, activeSelectorModifier}) => {
 
     const tabsElements = document.querySelectorAll(tabsSelector);
     const activeTabSelector = tabsSelector + activeSelectorModifier;
@@ -21,4 +21,4 @@ const tabsMudule = ({tabsSelector, tabsContentWrapperSelector, activeSelectorMod
 
 }
 
-export default tabsMudule;
+export default tabsModule;
