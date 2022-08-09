@@ -46,10 +46,14 @@
     }
         
     &__list-wrapper{
+        display: none;
         margin-top: 48px;
-        display: flex;
         flex-direction: column;
         gap: 30px;
+       
+        &--active{
+            display: flex;
+        }
         @media (min-width: 1200px) {
             flex-direction: row;
         }
