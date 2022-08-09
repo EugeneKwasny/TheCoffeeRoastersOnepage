@@ -1,4 +1,4 @@
-const mobileMenuToggle = ({toggleSlector, mobileMenuSelector, activeSelectorModifier})=>{
+const mobileMenuToggleModule = ({toggleSlector, mobileMenuSelector, activeSelectorModifier})=>{
 
     const toggleElement = document.querySelector(toggleSlector);
     const mobileMenu = document.querySelector(mobileMenuSelector);
@@ -13,4 +13,4 @@ const mobileMenuToggle = ({toggleSlector, mobileMenuSelector, activeSelectorModi
     });
 } 
 
-export default mobileMenuToggle;
+export default mobileMenuToggleModule;
