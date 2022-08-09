@@ -11,7 +11,7 @@ module.exports = {
         filename: "[name].min.js",
         assetModuleFilename: '[name][ext][query]'
     },
-    watch: true,
+   // watch: true,
     module: {
         rules: [{
                 test: /\.js$/,
@@ -51,15 +51,15 @@ module.exports = {
     plugins: [
         new miniCss({
             filename: "../css/[name].min.css"
-        }),
-        new browserSyncPlugin({
-            host: 'localhost',
-            port: 3000,
-            files: ['*.html'], // => files to watch
-            server: {
-                baseDir: [__dirname]
-            },
-            // proxy: 'http://localhost:8000/', => your local url
         })
+        // ,new browserSyncPlugin({
+        //     host: 'localhost',
+        //     port: 3000,
+        //     files: ['*.html'], // => files to watch
+        //     server: {
+        //         baseDir: [__dirname]
+        //     },
+        //     // proxy: 'http://localhost:8000/', => your local url
+        // })
     ]
 };
