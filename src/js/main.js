@@ -38,12 +38,5 @@ sliderModule({
  * Smooth scroll init for main menu 
  */
  scrollToAnchor({
-    menuItemSelector: '.site-header__main-menu-list-item-link'
- });
-
-/**
- * Smooth scroll init for mobile menu 
- */
- scrollToAnchor({
-    menuItemSelector: '.mobile-menu__list-item-link'
+    smoothScrollIdentifier: '!#'
  });
