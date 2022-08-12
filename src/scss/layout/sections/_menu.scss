@@ -68,7 +68,11 @@
     &__item{
         display: flex;
         gap: 24px;
-
+        justify-content: space-between;
+        &-body-wrapper{
+            display: flex;
+            gap: 24px;
+        }
         &-thumb{
             flex: 0 0 72px;
             &-image{
