@@ -1,8 +1,13 @@
 .features-section{
     @extend .section;
-    background-image: url(../images/features-bg.png);
-    background-position: 10%;
-    background-repeat: no-repeat;
+    background-image: none;
+
+
+    @media (min-width:576px) {
+        background-image: url(../images/features-bg.png);
+        background-position: 10%;
+        background-repeat: no-repeat;
+    }
     @media (min-width: 1200px) {    
         background-position: center center;
         min-height: 600px;
