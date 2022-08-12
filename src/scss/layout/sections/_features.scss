@@ -1,6 +1,6 @@
 .features-section{
     @extend .section;
-    background-image: url(../../images/features-bg.png);
+    background-image: url(../images/features-bg.png);
     background-position: 10%;
     background-repeat: no-repeat;
     @media (min-width: 1200px) {    
@@ -42,7 +42,7 @@
             }
 
             &--icon-1{
-                background-image: url(../../images/feature-icon-1.png);
+                background-image: url(../images/feature-icon-1.png);
 
                 @media (min-width: 1200px) {
                     padding-right: 80px;
@@ -52,7 +52,7 @@
                 }
             }
             &--icon-2{
-                background-image: url(../../images/feature-icon-2.png);
+                background-image: url(../images/feature-icon-2.png);
                 @media (min-width: 1200px) {
                     padding-right: 128px;
                     padding-left: 0;
@@ -61,7 +61,7 @@
                 }
             }
             &--icon-3{
-                background-image: url(../../images/feature-icon-3.png);
+                background-image: url(../images/feature-icon-3.png);
                 @media (min-width: 1200px) {
                     padding-right: 80px;
                     padding-left: 0;
@@ -70,17 +70,17 @@
                 }
             }
             &--icon-4{
-                background-image: url(../../images/feature-icon-4.png);
+                background-image: url(../images/feature-icon-4.png);
             }
             &--icon-5{
-                background-image: url(../../images/feature-icon-5.png);
+                background-image: url(../images/feature-icon-5.png);
                 @media (min-width: 1200px) {
                     padding-left: 128px;
                     background-position: 15% center;
                 }
             }
             &--icon-6{
-                background-image: url(../../images/feature-icon-6.png);
+                background-image: url(../images/feature-icon-6.png);
             }
         }
 

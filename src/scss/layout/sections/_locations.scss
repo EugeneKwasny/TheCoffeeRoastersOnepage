@@ -2,7 +2,7 @@
     &-section{
         @extend .section;
         background-color: $default;
-        background-image: url('../../images/locations-bg.png');
+        background-image: url('../images/locations-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
         &__inner{
