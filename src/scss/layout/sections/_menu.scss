@@ -68,7 +68,12 @@
     &__item{
         display: flex;
         gap: 24px;
-
+        justify-content: space-between;
+        
+        &-body-wrapper{
+            display: flex;
+            gap: 24px;
+        }
         &-thumb{
             flex: 0 0 72px;
             &-image{
@@ -78,14 +83,6 @@
             }
         }
         &-body{
-            flex: 0 0 320px;
-
-            @media (min-width: 768px) {
-                flex: 0 0 510px;
-            }
-            @media (min-width: 1200px) {
-                flex: 0 0 320px;
-            }
             &-heading{}
             &-desc{
                 @extend .p-small;
@@ -96,14 +93,3 @@
         }
     }
 }
-
-// <div class="menu-list__item">
-// <div class="menu-list__item-thumb">
-//     <img class="menu-list__item-thumb-image" src="./images/menu-1.png" alt="menu-1">
-// </div>
-// <div class="menu-list__item-body">
-//     <h6 class="menu-list__item-body-heading">Prufrock Breakfast Bun</h6>
-//     <p class="menu-list__item-body-desc">Brioche bun, with bacon, scrambled egg, melty cheese and mustard</p>
-// </div>
-// <div class="menu-list__item-body-price">$8</div>
-// </div>

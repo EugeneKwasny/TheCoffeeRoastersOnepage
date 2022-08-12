@@ -28,10 +28,13 @@
         &__form{
             max-width: 474px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             margin-top: 48px;
             gap: 24px;
-
+            @media (min-width:576px) {
+                flex-direction: row;
+            }
             &-input{
                 &--type-text{
                     background-color: transparent;
@@ -50,6 +53,12 @@
                     @extend .btn-outline;
 
                     color: $white;
+
+                    width: 100%;
+
+                    @media (min-width:576px) {
+                        width: auto;
+                    }
 
                     &:hover{
                         background-color: $white;
