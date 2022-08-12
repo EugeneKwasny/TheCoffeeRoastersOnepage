@@ -1,6 +1,7 @@
 import mobileMenuToggleModule from './modules/mobileMenuToggle';
 import tabsModule from './modules/tabsModule';
 import sliderModule from './modules/sliderModule';
+import scrollToAnchor from './modules/scrollToAnchor';
 
 /**
  * Mobile menu init
@@ -8,6 +9,7 @@ import sliderModule from './modules/sliderModule';
 mobileMenuToggleModule({
     toggleSlector: '.site-header__main-menu-toggle',
     mobileMenuSelector: '.mobile-menu',
+    mobileMenuItemSelector: '.mobile-menu__list-item-link',
     activeSelectorModifier: '--active'
 });
 
@@ -30,3 +32,11 @@ sliderModule({
     sliderContentWrapperSelector: '.testimonials-slider__item',
     activeSelectorModifier: '--active'
 });
+
+
+/**
+ * Smooth scroll init for main menu 
+ */
+ scrollToAnchor({
+    smoothScrollIdentifier: '!#'
+ });
