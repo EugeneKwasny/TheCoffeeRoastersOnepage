@@ -1,7 +1,7 @@
 const miniCss = require("mini-css-extract-plugin");
 const browserSyncPlugin = require('browser-sync-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: 'production',
@@ -9,11 +9,14 @@ module.exports = {
         "main": ["./src/js/main.js", "./src/scss/main.scss"]
     },
     output: {
-        path: __dirname + "/dist/js/",
-        filename: "[name].min.js",
-        assetModuleFilename: '[name][ext][query]'
+        clean: {
+            dry: true, // Log the assets that should be removed instead of deleting them.
+        },
+        //path: __dirname + "/dist/",
+        filename: "js/[name].min.js",
+        assetModuleFilename: 'images/[name][ext][query]',
+        publicPath: '/'
     },
-    watch: false,
     module: {
         rules: [
                 {
@@ -26,9 +29,6 @@ module.exports = {
                     use: [
                         {
                             loader: miniCss.loader,
-                            options: {
-                                publicPath: '../../images'
-                            }
                         },
                         'css-loader',
                         'sass-loader',
@@ -52,9 +52,16 @@ module.exports = {
             }]
     },
     plugins: [
-        new HtmlWebpackPlugin(),
-        new miniCss({
-            filename: "../css/[name].min.css"
+        new CopyPlugin({
+            patterns: [
+              { from: "./src/images", to: "./images" }
+            ],
+          }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        })
+        ,new miniCss({
+            filename: "css/[name].min.css"
         })
     ]
 };
