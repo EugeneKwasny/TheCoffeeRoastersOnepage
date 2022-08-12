@@ -83,13 +83,13 @@
         }
         &-body{
             flex: 0 0 320px;
-            max-width: 320px;
-            @media (min-width: 768px) {
-                flex: 0 0 510px;
-            }
-            @media (min-width: 1200px) {
-                flex: 0 0 320px;
-            }
+            //max-width: 320px;
+            // @media (min-width: 768px) {
+            //     flex: 0 0 510px;
+            // }
+            // @media (min-width: 1200px) {
+            //     flex: 0 0 320px;
+            // }
             &-heading{}
             &-desc{
                 @extend .p-small;
