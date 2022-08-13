@@ -1,5 +1,4 @@
 const miniCss = require("mini-css-extract-plugin");
-const browserSyncPlugin = require('browser-sync-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
